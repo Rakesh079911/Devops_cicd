@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx
+    container_name: my_shresh_conatiner
+    volumes:
+      - mydata:/home/node/app
+volumes:
+  mydata:
+    external: true
